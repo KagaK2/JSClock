@@ -49,10 +49,15 @@
         background: black;
         position: absolute;
         top: 50%;
-        transform-origin: 100%;
-        transform: rotate(90deg);
+        transform-origin: 100%; /*so that the hand can rotate from one end*/
+        transform: rotate(90deg); /*fix the initial angle of the hands*/
         transition: all 0.05s;
-        transition-timing-function: cubic-bezier(0.19, 1, 0.47, 2.18);
+        transition-timing-function: cubic-bezier(
+          0.19,
+          1,
+          0.47,
+          2.18
+        ); /*the snappy clock effect*/
       }
     </style>
     <script>
